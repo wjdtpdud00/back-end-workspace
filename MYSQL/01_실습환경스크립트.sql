@@ -92,7 +92,7 @@ CREATE TABLE national(
     national_name VARCHAR(35)
 );
 
-INSERT INTO national (nationaldepartment_code, national_name) VALUES ('KO','한국');
+INSERT INTO national (national_code, national_name) VALUES ('KO','한국');
 INSERT INTO national (national_code, national_name) VALUES ('JP','일본');
 INSERT INTO national (national_code, national_name) VALUES ('CH','중국');
 INSERT INTO national (national_code, national_name) VALUES ('US','미국');
@@ -109,4 +109,4 @@ INSERT INTO sal_grade (sal_level, min_sal, max_sal) VALUES ('S2',5000000,5999999
 INSERT INTO sal_grade (sal_level, min_sal, max_sal) VALUES ('S3',4000000,4999999);
 INSERT INTO sal_grade (sal_level, min_sal, max_sal) VALUES ('S4',3000000,3999999);
 INSERT INTO sal_grade (sal_level, min_sal, max_sal) VALUES ('S5',2000000,2999999);
-INSERT INTO sal_grade (sal_level, min_sal, max_sal) VALUES ('S6',1000000,1999999);departmentemployeedepartmentemployeedepartment
+INSERT INTO sal_grade (sal_level, min_sal, max_sal) VALUES ('S6',1000000,1999999);

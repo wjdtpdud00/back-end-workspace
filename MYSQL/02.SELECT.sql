@@ -241,6 +241,8 @@ WHERE phone LIKE '__1%' ;
 -- 이메일 중 _앞글자가 3글자인 사원들의 사번, 이름, 이메일 조회
 -- ex) sim_bs@kh.or.kr, sun_di@kh.or.kr
 -- ESCAPE OPTION : 나만의 와일드 카드를 만들어서 사용!
+SELECT emp_name ,email FROM employee;   -- no_hc@kh.or.kr
+
 SELECT emp_id, emp_name, email
 FROM employee
 WHERE email Like '__$_%' ESCAPE '$';
@@ -357,7 +359,7 @@ FROM employee;
     - 해당 컬럼 값들의 총 합계를 반환
 */
 -- 전체 사원의 총 급여 합 조회
-SELECT  format(sum(salary), 0) "급여 합계"
+SELECT  format(sum(salary), 0) "급여 합계" --  (sum(salary), 0) 소수점 뒷자리개수임!
 FROM employee;
 
 -- 부서코드가(dept_code)가 D5인 사원들의 총 연봉(급여 * 12) 합 조회

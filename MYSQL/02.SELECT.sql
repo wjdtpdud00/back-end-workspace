@@ -195,7 +195,7 @@ WHERE 6000000>=salary and salary >= 3500000;
 	- 조건식에서 사용되는 구문
     - 몇 이상 몇 이하인 범위에 대한 조건을 제시할 때 사용되는 연산자
     
-    비교대상컬럼 BETWEEN 하한값 AND 상한값
+    비교대상컬럼 BETWEEN 하한값 AND 상한값 
 */
 SELECT emp_name, emp_id, salary
 FROM employee

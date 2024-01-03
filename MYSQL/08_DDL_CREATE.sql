@@ -253,32 +253,195 @@ SELECT * FROM mem_grade;
 	--> 다른 테이블을 참조한다고 표현
     --> 주로 FOREIGN KEY 제약조건에 의해 테이블 간의 관계가 형성된다.
 */
+DROP TABLE member;
+CREATE TABLE member( 
+	mem_no INT, -- PRIMARY KEY, 컬럼 레벨 방식
+    mem_id VARCHAR(20) NOT NULL UNIQUE,
+    mem_pwd VARCHAR(20) NOT NULL,
+    mem_name VARCHAR(20) NOT NULL,
+    gender CHAR(3) CHECK(gender IN('남', '여')) NOT NULL,
+    phone VARCHAR(13),
+    email VARCHAR(50),
+    grade_id INT,
+    PRIMARY KEY (mem_no), -- 테이블 레벨 방식
+    FOREIGN KEY (grade_id) REFERENCES mem_grade(grade_code)
+);
+INSERT INTO member 
+VALUES(1, 'user01', 'pass01', '신대규', '남', null, null, 10);
+-- > 외래키 제약조건이 부여되어도 기본적으로 NULL 허용됨
+INSERT INTO member
+VALUES(2, 'user02', 'pass02', '조세미', '여', null, null, 40);
 
+INSERT INTO member
+VALUES(3, 'user03', 'pass03', '정회영', '남', null, null, 20);
+-- > 부모키(PARENT KEY)를 찾을 수 없다는 오류 발생!
+INSERT INTO member
+VALUES(3, 'user03', 'pass03', '정회영', '남', null, null, 20);
 
+INSERT INTO member
+VALUES(4, 'user05', 'pass04', '윤민영', '여', null, null, 10);
 
+SELECT * FROM mem_grade;
+SELECT * FROM member;
 
+-- > 부모 테이블(mem_grade)에세 데이터값을 삭제할 경우 어떤 문제가 발생하는지
+-- 데이터 삭제 :  DELETE FROM 테이블명 WHERE 조건;
 
+-- mem_grade 테이블에서 grade_code가 10인 등급 삭제
+DELETE FROM mem_grade
+WHERE grade_code = 10;
+-- > 자식테이블(member)에서 10이라는 값을 사용하고 있기 때문에 삭제 x
+-- mem_grade 태이블에서 grade_code가 30인 등급 삭제
+DELETE FROM mem_grade
+WHERE grade_code = 30;
+-- > 자식테이블(member)에 30이라는 값을 사용하지 않기 때문에 삭제 o
 
+SELECT * FROM mem_grade;
+SELECT * FROM member; -- -- > 자식테이블(member)에서 10이라는 값을 사용하고 있기 때문에 삭제 x
 
+DELETE FROM member WHERE mem_no = 2;
+DELETE FROM member WHERE mem_no = 4;
 
+/*
+	자식테이블 생성시 외래키 제약조건을 부여할 때 삭제옵션 지정 가능
+    - 삭제옵션 : 부모테이블의 데이터 삭제 시 그 데이터를 사용하고 있는 
+			   자식 테이블의 값을 어떻게 처리할 건지
+               
+	1. ON DELETE RESTRICTED (기본값)
+		: 자식데이터로 쓰이는 부모데이터는 삭제가 아예 안되게끔 
+	2. ON DELETE SET NULL
+		: 부모데이터 삭제시 해당 데이터를 쓰고 있는 자식데이터의 값을 NULL로 처리
+	3. ON DELETE CASCADE 
+		: 부모데이터 삭제시 해당 데이터를 쓰고 있는 자식데이터도 같이 삭제
+*/
+DROP TABLE member;
+CREATE TABLE member( 
+	mem_no INT, -- PRIMARY KEY, 컬럼 레벨 방식
+    mem_id VARCHAR(20) NOT NULL UNIQUE,
+    mem_pwd VARCHAR(20) NOT NULL,
+    mem_name VARCHAR(20) NOT NULL,
+    gender CHAR(3) CHECK(gender IN('남', '여')) NOT NULL,
+    phone VARCHAR(13),
+    email VARCHAR(50),
+    grade_id INT,
+    PRIMARY KEY (mem_no), -- 테이블 레벨 방식
+    FOREIGN KEY (grade_id) REFERENCES mem_grade(grade_code) ON DELETE SET NULL
+);
+INSERT INTO member 
+VALUES(1, 'user01', 'pass01', '신대규', '남', null, null, null);
+-- > 외래키 제약조건이 부여되어도 기본적으로 NULL 허용됨
+INSERT INTO member
+VALUES(2, 'user02', 'pass02', '조세미', '여', null, null, 10);
 
+INSERT INTO member
+VALUES(3, 'user03', 'pass03', '정회영', '남', null, null, 20);
 
+INSERT INTO member
+VALUES(4, 'user05', 'pass04', '윤민영', '여', null, null, 10);
 
+SELECT * FROM mem_grade;
+SELECT * FROM member;
 
+-- mem_grade에서 grade_code가 10인 등급을 삭제
+DELETE FROM  mem_grade
+WHERE grade_code = 10;
+-- > 잘 삭제됨! 단, 10을 가져다 쓰고 있던 자식 데이터 값은 NULL로 변경
 
+INSERT INTO mem_grade VALUES(10, '일반회원');
 
+-- ON DELETE CASCADE
 
+DROP TABLE member;
+CREATE TABLE member( 
+	mem_no INT, -- PRIMARY KEY, 컬럼 레벨 방식
+    mem_id VARCHAR(20) NOT NULL UNIQUE,
+    mem_pwd VARCHAR(20) NOT NULL,
+    mem_name VARCHAR(20) NOT NULL,
+    gender CHAR(3) CHECK(gender IN('남', '여')) NOT NULL,
+    phone VARCHAR(13),
+    email VARCHAR(50),
+    grade_id INT,
+    PRIMARY KEY (mem_no), -- 테이블 레벨 방식
+    FOREIGN KEY (grade_id) REFERENCES mem_grade(grade_code)
+);
+INSERT INTO member 
+VALUES(1, 'user01', 'pass01', '신대규', '남', null, null, null);
+-- > 외래키 제약조건이 부여되어도 기본적으로 NULL 허용됨
+INSERT INTO member
+VALUES(2, 'user02', 'pass02', '조세미', '여', null, null, 10);
 
+INSERT INTO member
+VALUES(3, 'user03', 'pass03', '정회영', '남', null, null, 20);
 
+INSERT INTO member
+VALUES(4, 'user04', 'pass04', '윤민영', '여', null, null, 10);
+-- 10번 삭제
+DELETE FROM mem_grade
+WHERE grade_code = 10;
 
+SELECT * FROM mem_grade;
+SELECT * FROM member;
 
+/*
+	DEFAULT 기본값
+    - 제약조건 아님!
+    - 컬럼을 선정하지 않고 INSERT시 NULL이 아닌 기본값을 세팅해주는 값
+*/
 
+DROP TABLE member;
+CREATE TABLE member( 
+	mem_no INT AUTO_INCREMENT PRIMARY KEY, 
+    mem_name VARCHAR(20) NOT NULL,
+    mem_age INT,
+    hobby VARCHAR(20) DEFAULT '노래',
+   -- (시간까지 나옴) enroll_date DATETIME DEFAULT NOW(),
+   enroll_date DATE DEFAULT (current_date)
+   -- 날짜만 나옴
+);
+INSERT INTO member VALUES(1, '손민정', 20, default, '23-11-30');
+INSERT INTO member VALUES(2, '정세영', 20, default, null);
+INSERT INTO member VALUES(3, '김다은', 20, default, default);
 
+-- INSERT INTO 테이블명(컬럼명, 컬럼명, ...) VALUES(컬럼값, 컬럼값, ...);
+INSERT INTO member(mem_no, mem_name) VALUES(4, '권예빈');
+-- > 선택되지 않은 칼럼에는 기본적으로 NULL이 들어감
+-- 단, 해당 컬럼에 DEFAULT 값이 부여되어있을 경우 NULL이 아닌 DEFAULT 값이 들어감
+INSERT INTO member(mem_name) VALUES('권예빈');
+-- > AUTO_INCREMENT를 지정하여 mem_no가 자동으로 1 증가해서 추가
+SELECT * FROM member;
 
+/*
+	서브쿼리를 이용한 테이블 생성
+    - 컬럼명, 데이터 타입, 값 모두 복사 / 제약조건은 NOT NULL만
+    
+    CREATE TABLE 테이블명
+    AS 서브쿼리;
+*/
+-- employee 테이블 복사하여 새로운 테이블 생성(컬럼, 데이터 타입, 데이터, not null 제약조건 다 복사)
+CREATE TABLE employee_copy
+AS SELECT * FROM kh.employee;
 
+DESC employee_copy;
+SELECT * FROM employee_copy;
 
+DROP TABLE employee_copy;
 
+-- 데이터 값은 복사하지 X
+CREATE TABLE employee_copy
+AS SELECT * FROM kh.employee WHERE 1 = 0;
+-- 모든 행에 대해서 매번 false이기 때문에 테이블이 구조만 복사되고 데이터 값은 복사되지 X
 
+DROP TABLE employee_copy;
+
+-- employee 테이블에서 사번, 직원명, 급여, 연봉만 저장하는 테이블 생성
+CREATE TABLE employee_copy
+AS SELECT emp_id 사번, 
+		  emp_name 직원명, 
+          foramt(salary, 0) 급여, 
+          format(salary*12, 0) 연봉 
+	FROM kh.employee;
+
+SELECT * FROM employee_copy;
 
 
 

@@ -309,7 +309,7 @@ DELETE FROM member WHERE mem_no = 4;
                
 	1. ON DELETE RESTRICTED (기본값)
 		: 자식데이터로 쓰이는 부모데이터는 삭제가 아예 안되게끔 
-	2. ON DELETE SET NULL
+	2. ON DELETE SET NULLON DELETE SET NULL
 		: 부모데이터 삭제시 해당 데이터를 쓰고 있는 자식데이터의 값을 NULL로 처리
 	3. ON DELETE CASCADE 
 		: 부모데이터 삭제시 해당 데이터를 쓰고 있는 자식데이터도 같이 삭제

@@ -388,6 +388,8 @@ SELECT
     avg(bonus), avg(ifnull(bonus, 0))
 FROM employee;
 
+
+
 /*
 	MIN|MAX(모든 타입의 컬럼)
     - MIN : 해당 컬럼 값들 중에 가장 작은 값을 반환 
@@ -395,6 +397,8 @@ FROM employee;
 */
 -- 가장 작은 값에 해당하는 사원명(emp_name), 급여(salary_, 입사일(hire_date)
 -- 가장 큰 값에 해당하는 사원명, 급여, 입사일 조회
+
+
 SELECT
 	min(emp_name), min(salary), min(hire_date), 
     max(emp_name), max(salary), max(hire_date)

@@ -13,9 +13,15 @@ SELECT * FROM employee; -- emp_id, emp_name, salary, dept_code, salary
 SELECT * FROM department; -- dept_id, dept_title, location_id 
 SELECT * FROM location; -- local_code, national_code
 SELECT * FROM national; -- national_code, national_name
+
 -- '한국'에서 근무하는 사원들의 사번, 이름, 부서명, 급여, 근무국가명 조회
 -- WHERE절로 풀이 -----
-emp_id, emp_name, dept_title, salary, national_name
+SELECT emp_id, emp_name, dept_title, salary, national_name
+FROM employee, department, location l, national n
+WHERE dept_code = dept_id 
+	AND location_id = local_code 
+    AND l.national_code = n.national_code
+    AND national_name = '한국';
 
 -- JOIN으로 풀이 ----
 SELECT emp_id, emp_name, dept_title, salary, national_name
@@ -136,7 +142,7 @@ AS SELECT job_code
 	FROM job;
 
 SELECT * FROM vw_job; -- job_code
-SELECT * FROM job; -- 
+SELECT * FROM job; 
 
 -- INSERT (에러)
 INSERT INTO vw_job(job_code, job_name)

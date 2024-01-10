@@ -7,12 +7,12 @@ public class B_Casting {
 	 * - 값의 타입을 다른 타입으로 변환하는 것
 	 * - boolean을 제외한 7개의 기본형은 서로 형변환이 가능
 	 * */
-	
+	 
 	public static void main(String[] args) {
 		B_Casting b = new B_Casting();
 		// b.autoCasting();
 		b. casting();
-	}
+	} 
 	/*
 	 * 자동 형 변환(묵시적 형 변환)
 	 * - 자동으로 형 변환이 이루어지기 때문에 따로 형 변환하지 않아도 된다.
@@ -84,7 +84,6 @@ public void casting() {
 }
 
 }
-
 
 
 

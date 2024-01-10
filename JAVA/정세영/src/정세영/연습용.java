@@ -4,14 +4,18 @@ import com.kh.variable.A_Variable;
 
 public class 연습용 {
 
-//#3 출력방법 알고가기	데이터타입, 변수명 = new 변수() ;
+	public static void main (String[] args){
+		연습용.constant();
 
-// 실행할 메소드가 있는 클래스를 생성(new)
-			연습용 look = new 연습용();
-
-            variable.look();
-
-		
-
+ }
 	
+	// 메소드 생성
+	public static void constant() {
+		
+		int age = 20;
+		age = 35;
+		System.out.println(age);
+		
+	}
+
 }

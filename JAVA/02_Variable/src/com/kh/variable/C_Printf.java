@@ -13,7 +13,7 @@ public class C_Printf {
 	    
 		// System.out.printf("출력하고자하는형식(포맷)", 출력하고자하는값, 값, ...);
 		// 출력하고자하는 값들이 제시한 형식에 맞춰서 출력만 진행
-		
+		 
 		/*
 		 * 포맷으로 쓰이는 키워드
 		 * %d : 정수
@@ -31,7 +31,7 @@ public class C_Printf {
 		System.out.println();
 		System.out.println("------------------------------");
 		
-	
+	 
 		
 		System.out.printf("%5d\n", iNum1); // %5d -> 5칸 공간 확보 후 양수 오른쪽 정렬
 	    System.out.printf("%-5d\n", -iNum2); // 음수 왼쪽 정렬

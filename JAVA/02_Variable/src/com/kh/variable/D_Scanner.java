@@ -3,7 +3,7 @@ package com.kh.variable;
 import java.util.Scanner;
 
 public class D_Scanner {
-
+ 
 	//#1.
 	/*
 	 * Scanner 
@@ -13,11 +13,12 @@ public class D_Scanner {
 	 * 
 	 * 2. Scanner 객체 생성
 	 * 	  Scanner sc = new Scanner(System.in);
+	 *    Scanner 하고싶은 이름(변수를 만들듯) = new Scanner(System.in);
 	 * 
 	 * 3. Scanner 메서드 사용 
 	 * 	  입력값이
 	 * 	  - 문자열일 때 : sc.next() - 공백이 있을 경우 공백 이전까지 
-	 * 					sc.nextLine(); - 공백 포함 엔터 전까지 --> 얘만 사용하는 것을 권장!
+	 * 				   sc.nextLine(); - 공백 포함 엔터 전까지 --> 얘만 사용하는 것을 권장!
 	 * 	  - 정수일 때 : sc.nextInt();
 	 * 	  - 실수일 때 : sc.nextFloat(), sc.nextDouble()	
 	 * */

@@ -9,7 +9,10 @@ public class VariablePractice {
 		v.method1();
 	}
 	
+
+	
 	public void method1() {
+
 		
 	}
 

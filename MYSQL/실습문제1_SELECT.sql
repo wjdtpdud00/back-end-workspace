@@ -14,7 +14,7 @@ WHERE first_name < 'B';
 SELECT title
 FROM film_list
 -- WHERE (category = 'Sci-Fi' OR categrory ='Family')
-WHERE category IN ('Sci-Fi' OR category = 'Family')
+WHERE category IN ('Sci-Fi','Family')
 AND rating = 'PG' 
 AND title LIKE '%GO%';
 
@@ -32,22 +32,29 @@ LIMIT 0, 4;
 
 -- 4. film_list 테이블에서 가격(price)은 2 이상 4 이하이면서 category가 Documentary거나 Animation이고 
 -- 배우들(actors) 중 BOB가 포함되어 있는 영화 제목(title)만 조회 
+SELECT*FROM film_list ;
+
+
 SELECT title
 FROM film_list
 WHERE price between 2 AND 4  
 AND category IN ('Documentary', 'Animation')
 AND actors LIKE '%BOB%';
+
+
+
 -- 5. address 테이블에서 district가 비어있지 않고 앞에 숫자 제외 주소만 10개 조회
-SELECT address, 
-       instr(address, ' '), 
-       substr(address, instr(address, '')+1, length(address))
-				/*substr 로 자른다.> adress에 있는 공백을 찾는다.
-                공백 이후 부터니까 +1, 길이만큼*/
+
+SELECT 
+	substr(address, instr(address, ' ') + 1) 'address',
+    district ''
 FROM address
--- WHERE district != '';
+-- WHERE district NOT IN ('');
 WHERE district != ''
-ORDER BY 2, 1 desc
-LIMIT 10;
+ORDER BY 2, 1 DESC;
+
+
+
 -- 6. customer_list 테이블에서 id가 6인 사람부터 10명 조회
 SELECT id, name
 FROM customer_list
@@ -70,3 +77,6 @@ SELECT
 	min(replacement_cost) "최소 비용",
     max(replacement_cost) "최대 비용"
 FROM film;
+
+
+

@@ -10,7 +10,7 @@ public class C_Printf {
 		System.out.println("hello");
 		
 		System.out.println("------------------------------");
-	    
+	      
 		// System.out.printf("출력하고자하는형식(포맷)", 출력하고자하는값, 값, ...);
 		// 출력하고자하는 값들이 제시한 형식에 맞춰서 출력만 진행
 		 

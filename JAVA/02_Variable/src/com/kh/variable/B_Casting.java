@@ -41,7 +41,7 @@ public class B_Casting {
 		long result4 = 30 + 30L; // 30L + 30L = 60L
 		System.out.println(result4);
 	}
-
+ 
 /*
  * 강제 형 변환(명시적 형 변환)
  * 

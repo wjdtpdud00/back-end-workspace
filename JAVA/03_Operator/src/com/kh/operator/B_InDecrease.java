@@ -34,17 +34,19 @@ public class B_InDecrease {
 	  // 전위 연산자 테스트
 	  System.out.println("1회 수행 후 값 :"  + ++number); // 11
 	  System.out.println("2회 수행 후 값 :" + ++number); // 12
-	  System.out.println("전위 연산자 적용 후 : " + number);//12
+	  System.out.println("전위 연산자 적용 후 : " + number);//12 전위나 후위 연산자가 아님.
 	  
+	  
+
 	  // 후위 연산자 테스트 
 	  System.out.println("1회 수행 후 값 :" + number++); // 12
-	  System.out.println("2회 수행 후 값 :" + number++); //13
-	  System.out.println("후위 연산자 적용 후 :" + number); // 14
+	  System.out.println("2회 수행 후 값 :" + number++); //13(뒤에)
+	  System.out.println("후위 연산자 적용 후 :" + number); // 14(뒤에)
 	  
   }
 	  public void method2() {
 		  int number = 20;
-		  int result = number++ * 3; //(후위연산) *3 계싼  후 number가 21이됨.
+		  int result = number++ * 3; //(후위연산) 20* 3 계산 후 number가 21이됨.
 		  
 		  System.out.println("number :" + number);//21
 		  System.out.println("result : " + result);//60 
@@ -53,9 +55,9 @@ public class B_InDecrease {
 		  int number2 = 20;
 		  int number3 = 30;
 		  
-		  System.out.println(number1++); // 10
-		  System.out.println((++number1) + (number2++)); // 12+ 20 = 32
-		  System.out.println((number1++) + (--number2) + (--number3)); //12 + 20 + 29 = 61
+		  System.out.println(number1++); // 10 
+		  System.out.println((++number1) + (number2++)); // 12+ 20 = 32// number1 =  12
+		  System.out.println((number1++) + (--number2) + (--number3)); //12 + 20 + 29 = 61 // number 1 = 13
 		  
 		  System.out.println("number1 :" + number1);// 13
 		  System.out.println("number2 :" + number2); //20

@@ -24,6 +24,7 @@ public class Employee {
 	public int getEmpNo() {
 		return empNo;
 	}
+	
 	public void setEmpNo(int empNo) {
 		this.empNo = empNo;
 	}

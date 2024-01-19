@@ -9,7 +9,7 @@ public class Engineer extends Employee{
 	public Engineer() {}
 		public Engineer (String name, int salary, String tech, int bonus) {
 			super(name, salary);
-			this.tech = tech;
+			this.tech = tech;// 구분
 			this.bonus = bonus;		
 		}
 		public String getTech() {

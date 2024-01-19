@@ -4,7 +4,7 @@ import com.kh.polymorphism.model.child.Engineer;
 import com.kh.polymorphism.model.child.Manager;
 import com.kh.polymorphism.model.child.Secretary;
 import com.kh.polymorphism.model.parent.Employee;
-
+// employee가 부모, manager, secretary, engineer가 자식인 상황
 /*
  * 다형성(Polymorphism)
  * - 하나의 객체변수가 여러가지 모양과 모습을 가지는 능력

@@ -8,6 +8,7 @@ import com.kh.exmaple.practice3.model.Employee;
 public class Applicaton {
 	Scanner sc = new Scanner(System.in);
 	// 전역 변수를 찍어내기 위해서 작성하는거임
+	// 다른 클래스의 입력값 담는곳
 	Employee viewEmployee = new Employee();
 	EmployeeController employeeController = new EmployeeController();
 	
@@ -56,12 +57,15 @@ public class Applicaton {
 		// 입력받은것 그대로 출력하는것
 		return Integer.parseInt(sc.nextLine());
 		
+		// 반환타입이 없을때(기본void)일때  return만 빼고 출력
+		// Integer.parseInt(sc.nextLine());
 	}
 	
 	// 저장할 데이터를 사용자에게 받는 메서드
 	public void insertEmp() {
 		// 1번을 기입했을때, 나오게 할 내용
 		System.out.println("사원 번호 : ");
+		// 어떤 타입으로 받겠다.
 		int empNo = Integer.parseInt(sc.nextLine());
 		
 		System.out.println("사원 이름 : ");
@@ -86,6 +90,7 @@ public class Applicaton {
 			
 			System.out.println("보너스 율 : ");
 			double bonus = Double.parseDouble(sc.nextLine());
+			// 다른 클레스에서 메소드 형식 빌려오기
 			// 추가정보가 포함된 add
 			employeeController.add(empNo, name, gender, phone, dept, salary, bonus);
 			

@@ -1,5 +1,8 @@
 package com.kh.polymorphism;
 
+import java.util.Scanner;
+
+import com.kh.polymorphism.controller.EmployeeController;
 import com.kh.polymorphism.model.child.Engineer;
 import com.kh.polymorphism.model.child.Manager;
 import com.kh.polymorphism.model.child.Secretary;
@@ -40,15 +43,38 @@ public class Application {
 		System.out.println(s2);
 		
 		// 다형성 + 객체 배열
+		Employee[] empArr = {e1, eg2, m2, s2};
+		
+		EmployeeController ec = new EmployeeController();
+		Scanner sc = new Scanner(System.in);
+		
+		//이름으로 사람 찾기
+		System.out.println("이름 입력 : ");
+		String name =sc.nextLine();
+		Employee result = ec.findEmployeeByName(name, empArr);
+		if(result!=null) {
+			System.out.println(result);
+		}else {
+			System.out.println("찾는 사람이 없습니다");
+		}
+		
+		// 찾은 사람의 연봉은?
+		// 보너스 때문에 기능으로 넣은것임.
+		//필요한 result 전달
+		System.out.println(result.getName() + "의 연봉은" + ec.getAnnualSalary(result));
 		
 		
-	}
+		
+		// 전체 사람들의 연봉 총합은?
 
-	
-	
-	
-	
-	
-	
+		// 임플로이 배열 돌리기
+		System.out.println("전체 사람들의 연봉 총합은 " + ec.getTotalSalary(empArr));
+		
+		
+		
 	
 }
+	
+}	
+	
+

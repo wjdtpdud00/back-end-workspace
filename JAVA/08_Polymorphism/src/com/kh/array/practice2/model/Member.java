@@ -5,7 +5,7 @@ package com.kh.array.practice2.model;
 public class Member {
 	
 	private String id;
-	private String name;
+	public String name;
 	private String password;
 	private String email;
 	private char gender;

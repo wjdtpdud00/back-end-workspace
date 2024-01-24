@@ -12,7 +12,6 @@ class LoopPractice {
 //		l.method4();
 //		l.method5();
 		l.method6();
-
 	}
 	
 	Scanner sc = new Scanner(System.in);
@@ -26,7 +25,8 @@ class LoopPractice {
         1
      */
     public void method1() {
-    	System.out.println("사용자 입력 : ");
+    	System.out.println("사용자 입력 > ");
+    	// 해당 번째까지 반복문 , 끝이 정해진 for문
     	int num = sc.nextInt();
     	for(int i = num; i >= 1; i--) {
     		System.out.println(i);
@@ -35,25 +35,17 @@ class LoopPractice {
 
     // 2. 1+(-2)+3+(-4)+...과 같은 식으로 계속 더해나갔을 때, 몇까지 더해야 총합이 100 이상 되는지 출력하시오.
     public void method2() {
+    	// n, -2n // 끝이 정해지지 않음 while
     	int sum = 0;
     	int num = 1;
     	
     	while(sum < 100) {
     		if(num % 2 == 0) {
     			sum += -num;
-    			//sum -= num;으로도 표현 가능
     		}else {
     			sum += num;
     		}
-    		
-//    		if(sum >= 100) {
-//    			break;
-//    		}
-    		num++; // [2가지 방법] 1. break걸어주거나 2. num-1로 표현하거나
     	}
-    	
-    	System.out.println(" 총합이 100 이상이 되려면 " + (num-1)+ "까지 더해야 한다");
-    	
     	
     }
 
@@ -68,27 +60,17 @@ class LoopPractice {
     public void method3() {
     	System.out.println("문자열 : ");
     	String str = sc.nextLine();
-    	
-    	System.out.print("문자 : ");
+
+    	System.out.println("문자 : ");
     	char ch = sc.nextLine().charAt(0);
     	
-    	//몇개인지를 세야함
-    	int count = 0;
-    	/*
-    	//길이가 정해져있으므로, for문이 적합함
+    	// 몇개인지는 count
+    	// 문자열로도 나타내야함
+    	int count= 0; // 횟수 담아낼거임
     	for(int i=0; i<str.length(); i++) {
     		if(ch == str.charAt(i)) count++;
     	}
-    	System.out.println(str + "안에 포함된" + ch + " 개수 : " + count);
-    }*/
-    	/*[향상된 for문 사용]
-    	for(아이템 하나씩: 배열){}*/
-    	// - str.toCharArray() : 문자열을 문자 배열로 바꾸는 함수
-    	for(char s : str.toCharArray()) {
-    		if(ch == s) count++;
-    	}
-    	System.out.println(str + "안에 포함된" + ch + " 개수 : " + count);
-    	
+    	System.out.println(str + "안에 포함된" + ch + "개수 : " + count);
     }
     
 
@@ -104,9 +86,11 @@ class LoopPractice {
      */
     public void method4() {
     	while(true) {
-    	int random =(int)(Math.random() * 11); // 기본값 : 0 <= random < 1 | 곱하기 11하면 11까지 받을 수있음
-    										   //  Math.random() * 11에 괄호를 걸어줘야 하는이유 : 형변환> 연산이기에,										   //INT로 변환하게 되면 값이 이상해짐.
+    	// random범위 정하기
+    	int random = (int)(Math.random() * 11);
+    	
     	System.out.println(random);
+    	// while ~일 동안
     	if(random == 0) break;
     	}
     }
@@ -123,42 +107,33 @@ class LoopPractice {
 
      */
     public void method5() {
-    	int[] dice = new int[6];
     	
-    	// 범위가 정해졌을때는 for문 추천!
-    	for(int i=0; i <10; i++) {
-    		//눈의값은 1~6까지 와야함// 0*6+1 < random + 1 < 1*6+1
-    		//int random = (int)(Math.random()*6 + 1);
-    		/*
-    		switch(random) {
-    		 case 1 :
-    			 dice[0]++;
-    			 break;
-    		 case 2 :
-    			 dice[1]++;
-    			 break;
-    		 case 3 :
-    			 dice[2]++;
-    			 break;
-    		 case 4 :
-    			 dice[3]++;
-    			 break;
-    		 case 5 :
-    			 dice[4]++;
-    			 break;
-    		 case 6 :
-    			 dice[5]++;
-    			 break;
-    		}*/
-    		// [축약된 방법]
-    		int random = (int)(Math.random()*6); // 0 <random < 6
-    		dice[random]++; //switch문 대신에 사용
-    	}
     	
-    	for(int i = 0; i<dice.length; i++) {
-    		System.out.println((i+1) + " : " + dice[i]);
+    	for(int i=0; i < 10; i++) {
+	    	// 몇번째 주사위인지 표현
+	    	int[] dice = new int[6];
+	    	// 눈의값은 1~6까지 : 0*6 +1 <  random*6+1 < 1*6+1
+	    	int random = (int)(Math.random()*6 +1);
+	    	// count 필요
+	    	switch(random) {
+	    		// 각 주사위의 눈의 경우
+		    	case 1 :
+		    		dice[0]++;
+		    	case 2 :
+		    		dice[1]++;
+		    	case 3 :
+		    		dice[2]++;
+		    	case 4 :
+		    		dice[3]++;
+		    	case 5 :
+		    		dice[4]++;
+		    	case 6 :
+		    		dice[5]++;
+		    		}
+		    	// 1~6 case
     	}
-    }
+   }
+    	
 
     /*
         6. 사용자의 이름을 입력하고 컴퓨터와 가위바위보를 하세요. 
@@ -181,7 +156,7 @@ class LoopPractice {
         김미경 : 보
         이겼습니다 !
     */
-    public void method6() {
+ public void method6() {
     	
     	String[] rps = {"가위", "바위", "보"};
     	int win = 0;
@@ -223,17 +198,7 @@ class LoopPractice {
     		}
     		System.out.println("비긴 횟수 : " + draw +", 진 횟수 : " + lose + ", 이긴 횟수 :"+ lose +", 이긴 횟수 : " + win);
     	}
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
+  	
     }
 
 }

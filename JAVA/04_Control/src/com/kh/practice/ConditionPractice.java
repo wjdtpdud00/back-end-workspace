@@ -28,7 +28,9 @@ public class ConditionPractice {
 //		p.practice6();
 //		p.practice7();
 //		p.practice8();
-		p.practice9();
+//		p.practice9();
+//		p.practice10();
+		p.practice11();
 	}
 
 	/*
@@ -283,15 +285,54 @@ public class ConditionPractice {
 //		}
 		
 	}
+	
+	
+	//# 학습동영상 필요 #
 	/*
-	 * 9. 키보드로 두 개의 양수와 연산 기호를 입력 받아 연산 기호에 맞춰 연산 결과를 출력하세요. (단, 양수가 아닌 값을 입력하거나
+	 * 9. 키보드로 두 개의 양수와 연산 기호를 입력 받아 연산 기호에 맞춰 
+	 * 연산 결과를 출력하세요. (단, 양수가 아닌 값을 입력하거나
 	 * 제시되어 있지 않은 연산 기호를 입력 했을 시 “잘못 입력하셨습니다. 프로그램을 종료합니다.” 출력)
 	 * 
 	 * 숫자 입력 : 15 숫자 입력 : 4 연산자를 입력(+,-,*,/,%) : / 15 / 4 = 3
 	 * 
 	 */
 	public void practice9() {
-		
+			System.out.print("숫자 입력 : ");
+			int num1 = Integer.parseInt(sc.nextLine());
+			System.out.print("숫자 입력 : ");
+			int num2 = Integer.parseInt(sc.nextLine());
+			System.out.print("연산자를  입력(+,-,*,/,%) : ");
+			char op = sc.nextLine().charAt(0);
+			
+//			if(num1 <= 0 && num2 > 0) {
+//				System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
+//				return; // return은 메서드에서 나감.
+//			}  첫번째에서 false면 두번째에서도 false이다./ 그리고 다르게 푸는경우 알려주는거임
+			
+			int result = 0;
+			//양수인것만 받기
+			if(num1 > 0 && num2 >0) {
+			// case문 활용
+			switch(op) {
+			case '+' :
+				result = num1 + num2;
+				break;
+			case '-' :
+				result = num1 - num2;
+				break;
+			case '*' :
+				result = num1 * num2;
+				break;
+			case '/' :
+				result = num1 / num2;
+				break;
+			case '%' :
+				result = num1 % num2;
+				break;
+				
+			}
+			}else;
+			System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
 	}
 
 	/*
@@ -300,20 +341,54 @@ public class ConditionPractice {
 	 * 
 	 * 1. 입력 2. 수정 3. 조회 4. 삭제 9. 종료 메뉴 번호를 입력하세요 : 3 조회 메뉴입니다.
 	 */
-	public void practice10() {}
+	public void practice10() {
+		
+		//메뉴창
+		System.out.println("1.입력");
+		System.out.println("2.수정");
+		System.out.println("3.조회");
+		System.out.println("4.삭제");
+		System.out.println("5.종료");
+		System.out.println("메뉴 번호를 입력 하세요 : ");
+		//입력창
+		int num = sc.nextInt();
+		String result = "";
+		// case필요
+		switch(num) {
+		case 1:
+			result = "입력 메뉴입니다.";
+			break;
+		case 2:
+			result = "수정 메뉴입니다.";
+			break;
+		case 3:
+			result = "조회 메뉴입니다.";
+			break;
+		case 4:
+			result = "삭제 메뉴입니다.";
+			break;
+		case 5:
+			result = "종료 메뉴입니다.";
+			break;
+		case 9:
+			result = "프로그램이 종료됩니다.";
+			break;
+		default:
+			System.out.println("잘못 입력하셨스니다. 프로그램을 종료합니다.");
+		} 
+
+	}
 
 	/*
 	 * 11. 중간고사, 기말고사, 과제점수, 출석횟수를 입력하고 Pass 또는 Fail을 출력하세요. 총 점 100점 중 배점으로는 다음과
 	 * 같다. 중간고사 (20%), 기말고사 (30%), 과제 (30%), 출석 (20%)
-	 * 
 	 * 이 때, 출석 회수는 총 강의 회수 20회 중에서 출석한 날만 입력
-	 * 
 	 * 총 점이 70점 이상이면서 전체 강의의 70%이상 출석을 했을 경우 Pass, 아니면 Fail을 출력하세요.
 	 * 
 	 * 
-	 * 중간 고사 점수 : 80 기말 고사 점수 : 90 과제 점수 : 50 출석 회수 : 15 ===========결과========== 중간
-	 * 고사 점수(20) : 16.0 기말 고사 점수(30) : 27.0 과제 점수 (30) : 15.0 출석 점수 (20) : 15.0 총점 :
-	 * 73.0 PASS
+	 * 중간 고사 점수 : 80 기말 고사 점수 : 90 과제 점수 : 50 출석 회수 : 15 ===========결과========== 
+     * 고사 점수(20) : 16.0 기말 고사 점수(30) : 27.0 과제 점수 (30) : 15.0 출석 점수 (20) : 15.0 총점 :
+     * 73.0 PASS
 	 * 
 	 * 중간 고사 점수 : 80 기말 고사 점수 : 30 과제 점수 : 60 출석 회수 : 18 ===========결과==========
 	 * FAIL [점수 미달] (총점 61.0)
@@ -325,14 +400,46 @@ public class ConditionPractice {
 	 * FAIL [출석 횟수 부족] (10/20) FAIL [점수 미달] (총점 66.0)
 	 * 
 	 */
-	public void practice11() {}
-	
-
-	
-	
-	
-	
-	
-	
-	
+	public void practice11() {
+		//질문
+		System.out.println("중간 고사 점수 : ");
+		//입력창
+		int num1 = sc.nextInt();
+		System.out.println("기말 고사 점수 : ");
+		//입력창
+		int num2 = sc.nextInt();
+		System.out.println("과제 점수 : ");
+		//입력창
+		int num3 = sc.nextInt();
+		System.out.println("출석 횟수 : ");
+		//입력창
+		int num4 = sc.nextInt();
+		System.out.println("=====결과=====");
+		
+		// 필요한것 : 총점, 출석 점수 
+		// 총점 70이상, 배점 적용점수 합계
+		// 중간고사 (20%), 기말고사 (30%), 과제 (30%), 출석 (20%)
+		int result = (num4/20) * 100;
+		double score1 = num1 * 0.2;
+		double score2 = num2 * 0.3;
+		double score3 = num3 * 0.3;
+		double score4 = num4 * 0.2;
+		double sum = score1 + score2 + score3+ score4;
+		
+//		if(sum >= 70 && result >=70) {
+//			System.out.println("중간 고사 점수(20) : " + score1);
+//			System.out.println("기말 고사 점수(30) : " + score2);
+//			System.out.println("과제 점수(30) : " + score3);
+//			System.out.println("출석 점수(20) : " + score4);
+//			System.out.println("총점 : " + sum);
+//			System.out.println("PASS");
+//		} else { // 아니라면 > 나가버린다.
+//			if(sum < 70) { // 맞다면 - 맞다면 > 이어간다.
+//				System.out.println("FAIL [점수 미달] (총점 "+ sum +")");
+//			}if(result < 70) {
+//				
+//				
+//			}
+//		}	
+	}
 }

@@ -68,7 +68,7 @@ public class A_ArrayList {
 		ArrayList<Person> list = new ArrayList<Person>();
 		
 		
-		list.add("강호동222");
+//		list.addAll("강호동222");
 		
 		// 1. add : 리스트 끝에 추가
 		list.add(new Person("전현무", "삼성동", 46));

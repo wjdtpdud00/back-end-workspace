@@ -26,18 +26,20 @@ public class B_Properties {
 		
 		Enumeration en = prop.propertyNames();
 		while(en.hasMoreElements()) {
-			// 반환을 Object로함
 			String key = (String) en.nextElement();
 			String value = prop.getProperty(key);
 			
 			System.out.println(key + " : " + value);
-			
 		}
-		// hashtag 상속받아서 object 형태임
-		Set<Entry<Object,Object >> entrySet = prop.entrySet();
+		
+		Set<Entry<Object, Object>> entrySet = prop.entrySet();
 		for(Entry<Object, Object> entry : entrySet) {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
+		
+		
+		
+		
 	}
 
 }

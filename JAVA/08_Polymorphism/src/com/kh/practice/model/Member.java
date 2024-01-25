@@ -2,13 +2,14 @@ package com.kh.practice.model;
 
 import java.util.Arrays;
 
-// model class : 캡슐화 ! <- 변수 private
+// model class : 캡슐화! <- 변수 private! 
 public class Member {
 	
 	private String name = "";
 	private int age = 0;
 	private int coupon = 0;
-	private Book[] bookList = new Book[3];// String 에서 book으로
+	private Book[] bookList = new Book[3]; // 포함관계
+	
 	public String getName() {
 		return name;
 	}
@@ -33,13 +34,11 @@ public class Member {
 	public void setBookList(Book[] bookList) {
 		this.bookList = bookList;
 	}
+	
 	@Override
 	public String toString() {
 		return "Member [name=" + name + ", age=" + age + ", coupon=" + coupon + ", bookList="
 				+ Arrays.toString(bookList) + "]";
 	}
-	
 
-	
-	
 }

@@ -1,12 +1,11 @@
 package com.kh.array.practice1.model;
 
 public class Student {
-	
+
 	private String name;
 	private String subject;
 	private int score;
 	public Student() {
-		
 	}
 	public Student(String name, String subject, int score) {
 		this.name = name;
@@ -31,11 +30,11 @@ public class Student {
 	public void setScore(int score) {
 		this.score = score;
 	}
-	
 	@Override
 	public String toString() {
 		return "Student [name=" + name + ", subject=" + subject + ", score=" + score + "]";
 	}
+	
 	
 	
 }

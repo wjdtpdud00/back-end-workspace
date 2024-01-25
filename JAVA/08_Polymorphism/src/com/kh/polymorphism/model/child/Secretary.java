@@ -7,13 +7,11 @@ public class Secretary extends Employee {
 	private String nameOfBoss;
 
 	public Secretary() {
-		super();
-		
 	}
 
 	public Secretary(String name, int salary, String nameOfBoss) {
+		super(name, salary);
 		this.nameOfBoss = nameOfBoss;
-		
 	}
 
 	public String getNameOfBoss() {
@@ -28,5 +26,9 @@ public class Secretary extends Employee {
 	public String toString() {
 		return super.toString() + " / Secretary [nameOfBoss=" + nameOfBoss + "]";
 	}
-
+	
+	
+	
+	
+	
 }

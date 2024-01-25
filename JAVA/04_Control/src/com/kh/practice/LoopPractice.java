@@ -171,32 +171,39 @@ class LoopPractice {
     		System.out.println("가위바위보 : ");
     		String input = sc.nextLine();
     		
+    		// 사용자가 입력한 문자열이, 배열의 몇번째인지 찾아 주어야함.
     		int number = Arrays.asList(rps).indexOf(input);
-    		// 배열에서 값으로 인덱스 찾기 -> 사용자가 입력한 값을 숫자로!
+    		// 배열에서 값으로 인덱스 찾기 -> 리스트로 만들기 -> 몇번째 인지 찾기 
     		//rps[number] : 컴퓨터가 어떤것을 내었는지 나타냄
+    		
+    		// 사용자가 낸것
     		System.out.println("사용자 : " + rps[number]);
     		
-    		// 0 - 가위, 1 -  바위, 2- 보
-    		int computer = (int) (Math.random() * 3);
+    		// 컴퓨터가 낸것
+    		// 0 - 가위, 1 -  바위, 2- 보 random
+    		int computer = (int)(Math.random() * 3);
     		System.out.println("컴퓨터 : " + rps[computer]);
     		
-    		if(computer == number) {
-    			// 비겼을 경우
+    		// 경우의 수별로 나오게끔
+    		if(number == 0 && computer == 0) {
     			draw++;
     			System.out.println("비겼습니다.");
-    		} else if((number == 0 && computer == 2) 
-    				|| (number == 1 && computer == 0)
-    				|| (number == 2 && computer == 1)) {
-    			// 이겼을 경우
-    			System.out.println("이겼습니다 !");
+    		} else if((number == 0 && computer == 2)
+    			|| (number == 1 && computer == 0)
+    			|| (number == 2 && computer == 1)) {
     			win++;
-    			break;
-    		} else {
-    			// 졌을 경우
-    			System.out.println("졌습니다 ㅠㅠ");
+    			System.out.println("이겼습니다.");
+    		} else if((number == 0 && computer == 1)
+    				|| (number == 1 && computer == 0)
+    				|| (number == 2 && computer == 2)) {
     			lose++;
+    			System.out.println("졌습니다.");
     		}
-    		System.out.println("비긴 횟수 : " + draw +", 진 횟수 : " + lose + ", 이긴 횟수 :"+ lose +", 이긴 횟수 : " + win);
+    		// 횟수도 같이 세줌
+    		
+    		System.out.println("비긴 횟수 : " + draw + ", 진 횟수 : " + lose + "이긴 횟수 : " + win);
+    		// 총 결과값 나오게끔 출력
+
     	}
   	
     }

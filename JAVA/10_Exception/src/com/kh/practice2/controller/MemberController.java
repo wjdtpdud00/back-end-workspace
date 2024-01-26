@@ -13,7 +13,7 @@ public class MemberController {
 	
 	// 멤버 추가
 	public void insertMember(Member m) throws DuplicateNameException, RecordNotFoundException {
-		
+		// member클래스에 있는 요소를 가져옴
 		int index = checkId(m.getId());
 		if(index==-1) {
 			mArr[count++] = new Member(m.getId(), m.getName(), m.getPassword(), 
@@ -30,11 +30,12 @@ public class MemberController {
 	public int checkId(String id) throws DuplicateNameException, RecordNotFoundException {
 		for(int i=0; i<mArr.length; i++) {
 			if(mArr[i]!=null && mArr[i].getId().equals(id)) {
+				//print로 대체 가능!
 				throw new DuplicateNameException();
 			} else {
 //				throw new RecordNotFoundException();
 			}
-		}
+		} 
 		return -1;
 	}
 	

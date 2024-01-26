@@ -48,6 +48,7 @@ public class Application {
 			System.out.println("9. 끝내기");
 			System.out.print("메뉴 번호 : ");
 			
+			// 예외가 있을때 사용
 			try {
 				switch(Integer.parseInt(sc.nextLine())) {
 				case 1:

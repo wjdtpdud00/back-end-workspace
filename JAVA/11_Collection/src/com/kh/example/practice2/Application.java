@@ -8,10 +8,12 @@ import com.kh.list.A_ArrayList;
 public class Application {
 	Scanner sc = new Scanner(System.in);
 
-	MusicController mc = new MusicController();
+//	MusicController mc = new MusicController();
+	Music m = new Music();
 	
 	// 곡 리스트 담을 배열 만들기
-	ArrayList<String> musicList = new ArrayList();
+	ArrayList<Music> musicList = new ArrayList<>();
+	
     
 	public static void main(String[] args) {
 		Application a = new Application();
@@ -64,7 +66,7 @@ public class Application {
 		} catch(Exception e) {
 			System.out.println("잘못 입력하셨습니다 : For input string : 'r' ");
 		}
-	
+
 	}
 	
 	public void lastMusic() {
@@ -87,7 +89,7 @@ public class Application {
 		// 컨트롤러 클래스를 부를 생성자 만들기!
 		if(title != "" && singerName != "") {
 			System.out.println("추가 성공");
-			musicList.add(singerName)
+			musicList.add(new Music(title, singerName));
 		}else {
 			// 바깥에서 한거 재실행
 			lastMusic();
@@ -96,7 +98,8 @@ public class Application {
 	}
 	
 	public void musicList() {
-		
+		m.getSingerName();
+		m.getTitle();
 	}
 	
 	

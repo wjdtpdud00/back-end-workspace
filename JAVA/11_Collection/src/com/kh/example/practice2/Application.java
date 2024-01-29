@@ -100,6 +100,7 @@ public class Application {
 	public void musicList() {
 		m.getSingerName();
 		m.getTitle();
+		
 	}
 	
 	

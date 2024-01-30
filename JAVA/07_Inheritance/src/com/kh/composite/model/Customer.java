@@ -57,7 +57,7 @@ public class Customer {
 		return "Customer [name=" + name + ", grade=" + grade + ", bonusPoint=" + bonusPoint + ", bonusRatio="
 				+ bonusRatio + "]";
 	}
-	@Override// <- 어노테이션! '이 메서드는 재정의된 메서드이다.'라고 명확히 알려주는 역할
+	@Override// <- 어노테이션
 	public boolean equals(Object obj) {
 		// 매개변수 받기
 		// customer로 형변환 > 변수에 저장

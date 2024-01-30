@@ -20,8 +20,18 @@ public class Calculator {
 	 * - 반환값이 있는 경우 return 문 뒤에 반환값을 지정해야 함
 	 * 
 	 * */
+	public static void main(String[] args) {
+		Calculator c = new Calculator();
+		// return이 있는 메소드는, 값으로 반환되기 때문에 
+		// print로 출력하면됨. + 매개변수가 있으면 값을 넣여야함.
+//		System.out.println(c.factorial(5));
+		System.out.println(c.factorial2(3));
+	}
+	
+	// 인스턴스 변수 선언!
 	public int a, b;
 	
+	// 인스턴스 메서드 생성!
 	public int add() {
 		return a + b;
 	}
@@ -36,18 +46,9 @@ public class Calculator {
 		return a * b;
 	}
 	
-	/*
-	 * 1. 인스턴스 메서드
-	 *    - 객체 생성 후, '참조변수.메서드명()' 호출
-	 *    - 인스턴스 변수나 인스턴스 메서드와 관련된 작업을 하는 메서드 
-	 *    
-	 * 2. 클래스 메서드 (static 메서드)
-	 * 	  - 객체 생성 없이 '클래스명.메서드명()' 호출
-	 *    - 인스턴스 변수나 인스턴스 메서드와 관련 없는 작업을 하는 메서드  
-	 * */
-	
 	// 두 수의 몫과 나머지를 구하는 기능 : divide
 	// 결과값 : 몫은 3, 나머지는 2
+	//[클래스 메소드 생성]
 	public static String divide(int a, int b) {
 		return "몫은 " + quotient(a, b) + ", 나머지는 " + remainder(a, b);
 	}
@@ -72,21 +73,15 @@ public class Calculator {
 	public int factorial(int n) {
 		int result = 1;
 		
-		// 반복문
-		for(int i = n; i > 0; i--) {
+		for(int i =n; i > 0; i--) {
 			result *= i;
 		}
 		
 		return result;
-		
 	}
 	
-	/*
-	 * 재귀 함수(Recursion Function)
-	 * - 메서드 내에서 자기자신을 반복적으로 호출
-	 * - 반복문으로 바꿀 수 있으며 때때로 반복문보다 성능이 나쁠 수도 있음
-	 * - 이해하면 간결한 코드 작성이 가능
-	 * */
+	//[재귀함수 예시]
+	// 자기 자신을 계속 호출하는 함수임
 	public int factorial2(int n) {
 		int result = 1;
 		

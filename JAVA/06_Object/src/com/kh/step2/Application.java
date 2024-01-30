@@ -1,16 +1,27 @@
 package com.kh.step2;
-
+/*
+ * 변수의 종류
+ * 1. 클래스 변수
+ * - static이 들어감
+ * 
+ * 2. 인스턴스 변수
+ * - static 외
+ * 
+ * 3. 로컬 변수 
+ * - 메소드 안에 만들어진 변수
+ * */
 import com.kh.step2.model.Card;
 
 public class Application {
-
 	public static void main(String[] args) {
-		
-		// 클래스 변수는 객체 생성 없이 호출 가능!
+		//[클래스 변수 호출]
+		// Card클래스에 public static으로 변수 만들었음
 		System.out.println("width : " + Card.width);
 		System.out.println("height : " + Card.height);
 		
-		Card c1 = new Card(); 
+		// [클래스 변수에 초기값 설정 가능]
+		// Card클래스에 대한 객체 생성
+		Card c1 = new Card();
 		c1.kind = "Heart";
 		c1.number = 7;
 		
@@ -20,15 +31,25 @@ public class Application {
 		
 		Card.width = 50;
 		
-		// 클래스 변수는 모든 객체가 하나의 저장공간을 공유하므로 항상 공통된 값을 갖는다.
-		c1.width = 70;
-		c1.height = 90;
 		
-		System.out.println("첫번째 카드는 " + c1.kind + " " + c1.number + " 이며, "
-							+ "크기는 " + c1.width + " X " + c1.height + " 입니다.");
 		
-		System.out.println("두번째 카드는 " + c2.kind + " " + c2.number + " 이며, "
-				+ "크기는 " + c2.width + " X " + c2.height + " 입니다.");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
-
 }

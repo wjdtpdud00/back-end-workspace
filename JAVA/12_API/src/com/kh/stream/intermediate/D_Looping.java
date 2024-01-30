@@ -32,13 +32,5 @@ public class D_Looping {
 //			.filter(i -> i % 2 == 0)
 //			.sum();
 		System.out.println("1~5 중 짝수의 합계 : " + sum2);
-	}
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 }

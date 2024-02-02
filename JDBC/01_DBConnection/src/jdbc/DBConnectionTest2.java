@@ -20,8 +20,7 @@ public class DBConnectionTest2 {
 			// 2. 디비 연결
 			Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
 			// 3. 쿼리 준비 - INSERT
-			String query = "INSERT INTO employee_copy(emp_id, emp_name, emp_no)\r\n"
-					+ "VALUES(?, ?, ?)";	
+			String query = "INSERT INTO employee_copy(emp_id, emp_name, emp_no) VALUES(?, ?, ?)";	
 			PreparedStatement ps = conn.prepareStatement(query);
 			
 			// 4. 쿼리문 실행

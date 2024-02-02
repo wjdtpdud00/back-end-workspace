@@ -5,7 +5,10 @@ import com.kh.model.Member;
 public class MemberController {
 	
 	public boolean signUp(Member m) {
-		// 회원가입 기능 구현! -> member 테이블에 데이터 추가!(INSERT)
+		// 회원가입 기능 구현! 
+		// --> member 테이블에 데이터 추가!(INSERT)
+		// --> 로그인 기능 구현이 먼저 되어야 함!
+		// --> login 결과값이 null이 아닌 경우만 구현! 그게 아닐 때는 false만 리턴
 		return false;
 	}
 	

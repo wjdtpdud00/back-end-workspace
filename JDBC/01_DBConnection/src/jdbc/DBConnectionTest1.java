@@ -23,6 +23,7 @@ public class DBConnectionTest1 {
 			System.out.println("2. 데이터베이스와 연결...!!");
 			
 			//3. Statement 객체 생성 - SELECT
+			// SQL문 실행을 위해 사용! 쿼리문과 데이터 정리해서 실행함
 			String query = "SELECT * FROM employee";
 			PreparedStatement ps = conn.prepareStatement(query);
 			

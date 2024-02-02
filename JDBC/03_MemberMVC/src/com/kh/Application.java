@@ -50,7 +50,7 @@ public class Application {
 		String pw = sc.nextLine();
 		m.setOldPw(pw);
 		
-		Str
+		
 		// MemberController의 signUp 메서드 반환 결과에 따라
 		// true면 "성공적으로 회원가입 완료하였습니다." 출력
 		if() {

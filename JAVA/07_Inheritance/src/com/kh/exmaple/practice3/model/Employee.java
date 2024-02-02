@@ -9,9 +9,10 @@ public class Employee {
 	private int salary;
 	private double bonus;
 	
-	//## 왜 만드는거야
-	public Employee() {}
+	public Employee() {
 	
+	}
+
 	public Employee(int empNo, String name, char gender, String phone, String dept, int salary, double bonus) {
 		this.empNo = empNo;
 		this.name = name;
@@ -77,15 +78,15 @@ public class Employee {
 	public void setBonus(double bonus) {
 		this.bonus = bonus;
 	}
-	
-	// ## 재정의 하는 이유
+
 	@Override
 	public String toString() {
 		return "Employee [empNo=" + empNo + ", name=" + name + ", gender=" + gender + ", phone=" + phone + ", dept="
 				+ dept + ", salary=" + salary + ", bonus=" + bonus + "]";
 	}
 	
-	//## using field 사용 이유
+	
+	
 	
 	
 	

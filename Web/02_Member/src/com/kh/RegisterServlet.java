@@ -27,7 +27,7 @@ public class RegisterServlet extends HttpServlet {
 		// index.html에서 /register로 요청을 하여 pw.println("<a href='config.jsp?name="+ name +"&count=" + ++count+ "'>config.jsp로 이동</a>");
 		// result.jsp 파일로 해당 정보 출력
 		PrintWriter pw = response.getWriter();
-
+		
 		// result파일을 주소로 보냄
 		pw.println("<a href='result.jsp?name="+ name + "&addr=" + addr + "&age=" + age + "'>결과 확인</a>");
 		

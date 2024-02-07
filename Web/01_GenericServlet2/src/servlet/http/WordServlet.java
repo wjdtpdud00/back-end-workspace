@@ -10,17 +10,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class WordServlet extends HttpServlet {
-
+	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String word = request.getParameter("word");
-		System.out.println("Client Send Data : " + word);
 		
-		PrintWriter out = response.getWriter();
-		out.println("<html><body><h1>");
-		out.println("Client Send Data : " + word);
-		out.println("</h1></body></html>");
-		
-		out.close();
+	String word = request.getParameter("word");
+	System.out.println("Client Send Datga : " + word);
+	
+	PrintWriter out = response.getWriter();
+	out.println("<html><body><h1>");
+	out.println("Client Send Data : " + word);
+	out.println("</h1></body></html>");
+	
+	out.close();
+	
+	
 	}
-
 }

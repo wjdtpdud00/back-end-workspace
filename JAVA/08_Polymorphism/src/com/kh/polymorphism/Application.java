@@ -15,11 +15,24 @@ import com.kh.polymorphism.model.parent.Employee;
  * */
 
 public class Application {
-
 	public static void main(String[] args) {
-
 		Employee e1 = new Employee("이수근", 12000);
+		
+		// 생성자의 클래스가 객체에 영구적으로 자료형이 된다.
 		Engineer eg1 = new Engineer("김영철", 56000, "Java", 200);
+		Employee temp1 = (Employee)eg1;//temp1의 자료형 : Engineer 
+		
+		Employee temp2 = new Employee("안녕", 5);
+
+		
+		System.out.println(eg1.getClass());
+		System.out.println(temp1.getClass());
+		System.out.println(temp2.getClass());
+		
+		if(true) {
+			return;
+		}
+		
 		Manager m1 = new Manager("강호동", 23000, "기획팀");
 		Secretary s1 = new Secretary("서장훈", 34000, "강호동");
 		
@@ -29,42 +42,16 @@ public class Application {
 		System.out.println(s1);
 		
 		System.out.println();
+		System.out.println(" [다형성 방식으로 객체 생성]");
 		
-		// 다형성 방식으로 객체 생성
 		Employee eg2 = new Engineer("김영철", 56000, "Java", 200);
 		Employee m2 = new Manager("강호동", 23000, "기획팀");
 		Employee s2 = new Secretary("서장훈", 34000, "강호동");
 		
 		System.out.println(eg2);
 		System.out.println(m2);
-		System.out.println(s2);
 		
-		System.out.println();
-		
-		// 다형성 + 객체 배열 
-		Employee[] empArr = {e1, eg2, m2, s2};
-		
-		EmployeeController ec = new EmployeeController();
-		Scanner sc = new Scanner(System.in);
-		
-		// 이름으로 사람 찾기
-		System.out.print("이름 입력 : ");
-		String name = sc.nextLine();
-		Employee result = ec.findEmployeeByName(name, empArr);
-		if(result!=null) {
-			System.out.println(result);
-		} else {
-			System.out.println("찾는 사람이 없습니다");
-		}
-		
-		// 찾은 사람의 연봉은?
-		System.out.println(result.getName() + "의 연봉은 "
-									+ ec.getAnnualSalary(result));
-		
-		// 전체 사람들의 연봉 총합은?
-		System.out.println("전체 사람들의 연봉 총합은 "
-								+ ec.getTotalSalary(empArr));
+
 		
 	}
-
 }

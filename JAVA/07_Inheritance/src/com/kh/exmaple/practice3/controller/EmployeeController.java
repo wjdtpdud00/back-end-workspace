@@ -1,36 +1,50 @@
 package com.kh.exmaple.practice3.controller;
 
+import java.util.Scanner;
+
 import com.kh.exmaple.practice3.model.Employee;
 
-// controller의 역할 : Controller는 Model을 통해 데이터를 가져오고, 
-// 해당 데이터를 바탕으로 출력을 담당하는 View를 제어해서 사용자에게 전달한다 
-// (데이터 - 신호 | 장점 : 여러개의 신호를 한번에 줄 수 있음)
 public class EmployeeController {
+
+	private Employee employee = new Employee();
 	
 	public static void main(String[] args) {
 		
 	}
 	
-	Employee e = new Employee();
-	
-	public void add(int empNo, String name, Char gender, String phone, String dept, int salary, double bonus) {
-
-
+	// 오버로딩! 
+	// : 같은메소드를 매개변수 차이를 활용하여 생성
+	public void add(int empNo, String name, char gender, String phone )  {
+		employee.setEmpNo(empNo);
+		employee.setName(name);
+		employee.setGender(gender);
+		employee.setPhone(phone);
 	}
 	
-	public void modify(String phone) {
-		e.setPhone(phone);
+	public void add(int empNo, String name, char gender, String phone, String dept,
+					int salary, double bonus) {
+		employee.setEmpNo(empNo);
+		employee.setName(name);
+		employee.setGender(gender);
+		employee.setPhone(phone);
+		employee.setSalary(salary);
+		employee.setBonus(bonus);
+		
 	}
 	
-	public void modify(int Salary) {
-		e.setSalary(Salary);
-	}
 	
-	public void modify(double bonus1) {
-		e.setBonus(bonus1);
+	public void modify (String phone) {
+		// 전화번호 입력받는 곳 생성
+		employee.setPhone(phone);
+	}
+	public void modify (int salary) {
+		employee.setSalary(salary);
+	}
+	public void modify (double bonus) {
+		employee.setBonus(bonus);
 	}
 	
 	public  Employee info() {
-		return e; // employee클래스에 있는것들을 사용할것이 때문에, 반환받는다.
+		return employee; // employee클래스에 있는것들을 사용할것이 때문에, 반환받는다.
 	}
 }

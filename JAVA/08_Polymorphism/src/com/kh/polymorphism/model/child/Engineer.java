@@ -8,6 +8,7 @@ public class Engineer extends Employee {
 	private int bonus;
 	public Engineer() {
 	}
+	
 	public Engineer(String name, int salary, String tech, int bonus) {
 		super(name, salary);
 		this.tech = tech;

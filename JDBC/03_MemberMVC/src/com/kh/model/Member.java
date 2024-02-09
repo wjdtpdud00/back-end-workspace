@@ -5,10 +5,14 @@ public class Member {
 	private String oldPw;
 	private String newPw ;
 	private String name;
-	public Member() {
+	
+	public Member () {}
+	public Member(String id, String newPw, String name) {
+		this.id=id;
+		this.newPw = newPw;
+		this.name = name;
 	}
 	public Member(String id, String oldPw, String newPw, String name) {
-		super();
 		this.id = id;
 		this.oldPw = oldPw;
 		this.newPw = newPw;

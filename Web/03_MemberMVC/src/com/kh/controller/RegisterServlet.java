@@ -1,7 +1,12 @@
 package com.kh.controller;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -41,8 +46,11 @@ public class RegisterServlet extends HttpServlet {
 		
 		// 5. 네비게이션 :  결과 페이지 지정
 		request.getRequestDispatcher("result.jsp").forward(request, response);
-		
+		// -> 만약에 회원가입이 끝나고 view 페이지를 보여주고 싶다
+		// view 페이지는 폼 값 받는 로직 X
+		response.sendRedirect("view");
 	
 	}
+
 
 }

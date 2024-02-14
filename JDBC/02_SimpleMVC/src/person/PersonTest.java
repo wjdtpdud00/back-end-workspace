@@ -1,9 +1,5 @@
 package person;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -59,7 +55,6 @@ public class PersonTest {
 		if (result == 1) {
 			System.out.println(result + "명 삭제!");
 		}
-		
 	}
 
 	// person 테이블에 있는 데이터 전체 보여주기 - SELECT
@@ -68,11 +63,12 @@ public class PersonTest {
 		for (Person p : list) {
 			System.out.println(p);
 		}
-		
 	}
 
 	// person 테이블에서 데이터 한개만 가져오기 - SELECT
 	public void searchPerson(int id) throws SQLException {
 		Person p = pc.searchPerson(id);
 		System.out.println(p);
-		
+	}
+
+}

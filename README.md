@@ -168,7 +168,7 @@
 - 상세 기능 설명은 각 페이지별 링크 연결해두었습니다.
 
 ### 1) 홈
-|마이페이지 |🔗[로그인 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/페이지-기능-상세-설명#-로그인-페이지)|🔗[회원가입 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/페이지-기능-상세-설명#-회원가입-페이지)|
+|회원가입 | 로그인 |🔗[회원가입 페이지]|
 |:-:|:-:|:-:|
 |<img width="100px;" src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/2ece126d-49fc-4727-a0b4-87b8331a14cf"> |<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147004-5ca2bffd-9221-422c-beaf-9d6d96433e58.gif">|<img width="300px;" src="https://user-images.githubusercontent.com/89337955/154147035-9b44eb92-f879-4601-8200-5fe0f153d0e3.gif">|
 |🔗[홈 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%ED%99%88-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[검색 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%80%EC%83%89-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[채팅 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%80%EC%83%89-%ED%8E%98%EC%9D%B4%EC%A7%80)|

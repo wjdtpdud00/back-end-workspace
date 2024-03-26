@@ -12,22 +12,6 @@
 - 🙋🏻‍♀️ 이상호 🔗[github/mutual99](https://github.com/mutual99)
 - 🙋🏼‍♀️ 윤민영 🔗[github/as8285](https://github.com/as8285)
 
-<details>
-<summary>목차</summary>
-
-1. [프로젝트 목표](#goal)
-2. [개발 환경 및 배포 URL](#dev)
-3. [프로젝트 구조](#tree)
-4. [역할 분담](#role)
-5. [개발 기간 및 이슈 관리](#task)
-6. [UI](#ui)
-7. [페이지 기능](#pages)
-8. [개발하며 겪은 이슈](#issues)
-
-</details>
-
-***
-
 ## <span id="goal">1. 프로젝트 목표</span>
 - 개인 판매자가 보다 손쉽게 자신의 상품(딸기)을 판매하는 플랫폼을 제공합니다.
 - 현재 판매를 진행하지 않는 잠재 판매자와 고객에게 쉽게 접근 가능한 SNS 플랫폼을 제공합니다.

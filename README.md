@@ -162,8 +162,12 @@
 ## <span id="ui">6. UI</span>
 
 |<img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/3365d983-1c37-4049-9bd3-a5702e8ef9c3">|
+|:-:|
+|무슨 사진|
 |<img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/4f7908f2-4e22-4cb7-a185-178580bee75d">|
-
+|무슨 사진|
+|<img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/8945365e-f929-4c79-a7c4-a824504db98e">|
+|무슨 사진|
 
 
 

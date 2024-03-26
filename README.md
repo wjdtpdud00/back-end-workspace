@@ -96,7 +96,7 @@
 - 하단 이미지와 같이 개인, 공동 작업 페이지로 나누어 진행하였습니다.
 <img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/733f13c9-fb4e-49b9-8254-5fcfae48766b">
 
-### 금쪽같은 코딩팀 '전만순 프로젝트'
+### 금쪽같은 코딩팀 '전만순 프로젝트' URL
 - 🔗[github/JeongHoeYeong](https://github.com/JeongHoeYeong/gold-semi)
 ### 🙋🏻‍♀️ 정회영 
   - 게시판 작성 페이지, 게시판 수정/삭제 페이지, 게시판 대댓글 페이지, 추천수&조회수, Search 기능

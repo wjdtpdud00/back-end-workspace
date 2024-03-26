@@ -114,12 +114,8 @@
 
 
 ## <span id="task">5. 개발 기간 및 작업 관리</span>
-- 전체 개발 기간 : 2022-01-03 ~ 2022-02-13
-### 작업 관리
-- 배포용 HTML과 개발용 HTML을 분리하여 작업하였습니다. ([🔗 개발용 퍼블리싱 리스트](https://nurimeansworld.github.io/strawberry_market/html/index.html))
-- 🔗[GitHub Projects](https://github.com/nurimeansworld/strawberry_market/projects/1)와 🔗[Issues](https://github.com/nurimeansworld/strawberry_market/issues)를 사용하여 진행도와 상황을 꾸준히 공유하였습니다.
-<img src="https://user-images.githubusercontent.com/69141304/153535829-d60fd615-291c-49a2-a52b-86f05893d804.png">
-
+- 전체 개발 기간 : 2024-02-16 ~ 2024-03-26
+  
 ### 주간회의
 주간회의를 진행하여 작업 방향이나 코드 고민에 대해 나누었고 GitHub Wiki를 사용하여 기록하였습니다.
 

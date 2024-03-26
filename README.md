@@ -94,9 +94,7 @@
 
 ## <span id="role">4. 역할 분담</span>
 - 하단 이미지와 같이 개인, 공동 작업 페이지로 나누어 진행하였습니다.
-- 프로젝트를 진행하며 API 비교적 중요하다 생각되는 로그인, 회원가입 페이지를 공통으로 진행하였습니다.
-
-<img src="https://user-images.githubusercontent.com/92960723/153541899-7a566b69-f9f6-4e34-846c-112ff6dfa35a.png">
+<img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/733f13c9-fb4e-49b9-8254-5fcfae48766b">
 
 ### 🛠 공통 담당
   - splash 페이지, 로그인 페이지, 회원가입 페이지

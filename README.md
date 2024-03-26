@@ -150,12 +150,6 @@
 주간회의를 진행하여 작업 방향이나 코드 고민에 대해 나누었고 GitHub Wiki를 사용하여 기록하였습니다.
 
 - 🔗[220202 회의록](https://github.com/nurimeansworld/strawberry_market/wiki/220202-회의록)
-- 🔗[220128 회의록 (딸기마켓 Reboot 🔥)](https://github.com/nurimeansworld/strawberry_market/wiki/220128-%ED%9A%8C%EC%9D%98%EB%A1%9D-(%EB%94%B8%EA%B8%B0%EB%A7%88%EC%BC%93-Reboot-%F0%9F%94%A5))
-- 🔗[220114 회의록](https://github.com/nurimeansworld/strawberry_market/wiki/220114-회의록)
-- 🔗[220112 회의록](https://github.com/nurimeansworld/strawberry_market/wiki/220112-회의록)
-- 🔗[220107 회의록](https://github.com/nurimeansworld/strawberry_market/wiki/220107-회의록)
-- 🔗[220103 회의록](https://github.com/nurimeansworld/strawberry_market/wiki/220103-회의록)
-- 🔗[211228 회의록](https://github.com/nurimeansworld/strawberry_market/wiki/211228-회의록)
 
 <p align="right"><a href="#top">(Top)</a></p>
 

@@ -175,100 +175,58 @@
 
 ## <span id="pages">7. 페이지 기능</span>
 
-## 1) 메인 페이지
+### 1) 회원정보 관련 페이지
+|회원가입| 
+|:-:|
+|<img width="100%;" height="450px" src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/e8df43f1-ec78-4262-b784-baf6e46b7bc6">|
+
 |로그인 기능| 
 |:-:|
 |<img width="100%;" height="450px" src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/dc1b18fa-1455-463d-8541-6f64624ccf14">|
 
+|회원정보 변경| 
+|:-:|
+|<img width="100%;" height="450px" src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/2588e951-3b98-4b3f-a036-13232b341a48">|
 
+### 2) 관광지 · 맛집 게시판
+|페이징 & 검색 & 상세페이지| 
+|:-:|
+|<img width="100%;" height="450px" src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/085c99b6-85ef-48db-a4f8-9d887c01739b">|
 
+### 3) 게시판 페이지
+|게시글 작성 & 게시글 태그 & 게시글 삭제| 
+|:-:|
+|<img width="100%;" height="450px" src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/4f54390b-5c5d-490a-a8bf-0a07137c0c01">|
 
+|찜하기 & 검색 & 댓글 · 대댓글| 
+|:-:|
+|<img width="100%;" height="450px" src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/840becdc-5c93-4ba4-b73f-db75f06fdab2">|
 
+### 3) 메인 페이지
+|메인 검색기능 | 
+|:-:|
+|<img width="100%;" height="450px" src="https://github.com/wjdtpdud00/front-end-workspace/assets/152463268/b5a47451-c9df-46be-a0ee-426723eae2df">|
 
-
-
-
-
-
-
-## 2) 게시글
-|🔗[게시글 작성 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EC%9E%91%EC%84%B1-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[게시물 상세 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%8C%EC%8B%9C%EB%AC%BC-%EC%83%81%EC%84%B8-%ED%8E%98%EC%9D%B4%EC%A7%80)|
-|:-:|:-:|
-|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154149525-4f2279be-dc6e-4051-bcf8-1e4f44b5a2b7.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147122-b190781a-020e-48fa-b745-076958aaa0b8.gif">|
-|🔗[게시글 수정 or 신고 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EC%88%98%EC%A0%95-or-%EC%8B%A0%EA%B3%A0-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%8C%93%EA%B8%80-%EC%88%98%EC%A0%95-or-%EC%8B%A0%EA%B3%A0-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[댓글 삭제 or 신고 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EC%88%98%EC%A0%95-or-%EC%8B%A0%EA%B3%A0-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%8C%93%EA%B8%80-%EC%88%98%EC%A0%95-or-%EC%8B%A0%EA%B3%A0-%ED%8E%98%EC%9D%B4%EC%A7%80)|
-|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155879884-90eb92dc-a53e-4f4b-98aa-de655f5e4b8e.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154809365-fd7feb77-780f-4009-81ed-2b8d1b011b5e.gif">|
-
-## 3) 프로필
-|🔗[마이 프로필 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EB%A7%88%EC%9D%B4-%ED%94%84%EB%A1%9C%ED%95%84-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[유저 프로필 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%9C%A0%EC%A0%80-%ED%94%84%EB%A1%9C%ED%95%84-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[팔로워 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%ED%8C%94%EB%A1%9C%EC%9B%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%8C%94%EB%A1%9C%EC%9E%89-%ED%8E%98%EC%9D%B4%EC%A7%80)
-|:-:|:-:|:-:|
-|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155853160-889c8826-455a-43ce-90ad-6ffdb0c10a72.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155852974-ee932d5d-d1f0-44d8-87f9-0263f1622685.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155879188-637fb973-e9d7-405e-846c-1cca544eeba1.gif">
-|🔗[팔로잉 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%ED%8C%94%EB%A1%9C%EC%9B%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%8C%94%EB%A1%9C%EC%9E%89-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[로그아웃 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[프로필 수정 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%ED%94%84%EB%A1%9C%ED%95%84-%EC%88%98%EC%A0%95-%ED%8E%98%EC%9D%B4%EC%A7%80)
-|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155879191-6d45f339-75f3-4353-a3e4-7a864ca3341c.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154150447-2feca0af-dcf5-4101-8d6c-f4f0c81cc575.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147590-6343cb56-5a60-4a15-bf94-e6805d7e8bb3.gif">|
-
-## 4) 판매 상품
-|🔗[상품 등록 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EB%93%B1%EB%A1%9D-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[상품 수정 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%88%98%EC%A0%95-%ED%8E%98%EC%9D%B4%EC%A7%80)|
-|:-:|:-:|
-|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147633-4842d449-544d-4268-b3ef-361a031bb964.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154154506-7f492ae0-31cd-4da3-bf11-43a3b1608306.gif">|
-|🔗[상품 삭제 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%82%AD%EC%A0%9C-%EC%9D%B4%EB%8F%99-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[상품 사이트로 이동 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%82%AD%EC%A0%9C-%EC%9D%B4%EB%8F%99-%ED%8E%98%EC%9D%B4%EC%A7%80)|
-|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154155295-5c75bcb8-82cd-4b9b-930d-fb380e5b8218.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155849036-8466debe-7267-454b-8f4b-4f74b1eac7be.gif">|
-
-<p align="right"><a href="#top">(Top)</a></p>
+|메인 URL| 
+|:-:|
+|<img width="100%;" height="450px" src="https://github.com/wjdtpdud00/front-end-workspace/assets/152463268/323fa2fc-940f-461c-a982-3e353a921eb0">|
 
 ## <span id="issues">8. 개발하며 겪은 이슈</span>
-### 1) 코딩 컨벤션, 커밋 컨벤션 정하기
 #### 내용
-- 협업에 앞서 가독성과 개발 방식 통합을 위해 컨벤션 통일의 필요성에 대해 모두 동의하였습니다.
-- 첫 협업에 앞서 다양한 컨벤션 사례와 여러 자료를 서로 찾아보며 공유하였습니다.
-- 기존 사례를 무조건 따라가기 보다는 우리에게 더 적합하고 효율적인 규칙에 대해서 고민하는 시간을 가졌습니다.
+- 팀장 선정 기준
+    - 이전 코딩 프로그램 수업 동안의 성적을 토대로 팀장을 선정
+    - 또는 팀원들의 다수결로 선정 
+    - 이를 토대로 최종적으로 팀장을 선정
+#### 개발 방법
+- 수업 시간 중 배운 내용들을 베이스로 하되 좋은 코드 발견 시 참고
+- 서로 모르는 내용이 있으면 서로 도와가면서 개발하기
+
+#### 프로젝트를 하면서 느낀 이슈
+- 프로젝트는 잘 마무리가 되었지만 팀원들 간의 소통 부재
+- 파일 정리가 되어있지 않아 난잡함
+
 #### 결론
-- 우리만의 코딩 컨벤션, 커밋 컨벤션을 만들었습니다.
-
-  <details>
-  <summary>코딩 컨벤션</summary>
-
-  #### 코딩 컨벤션
-  - prettier 사용 X
-  - 들여쓰기 2개
-  - `reset.css`는 http://meyerweb.com/eric/tools/css/reset/ 사용
-  - z-index는 10단위로
-  - class명은 형태 + 의미 + 상태
-  - [toast-ko_HTMLCSS](https://ui.toast.com/fe-guide/ko_HTMLCSS), [toast-ko_CODING-CONVENTION](https://ui.toast.com/fe-guide/ko_CODING-CONVENTION)을 주로 따름
-
-  </details>
-
-  <details>
-  <summary>커밋 컨벤션</summary>
-
-  ### 커밋 컨벤션
-  ```
-  Add: 새로운 기능 추가
-  Fix: 버그 수정(단순 수정 X)
-  Docs: 문서 수정
-  Edit : 코드 포맷팅, 누락된 세미콜론 추가 등의 코드 변경은 없고 단순 style 수정
-  Refactor: 리팩토링
-  Test: 테스트 관련 코드 추가 및 삭제 등
-  ```
-
-  </details>
+- 원활한 소통을 위하여 주간일지 및 대면 회의 활성화
+- 파일 정리 및 일정 공유 담당자 지정
 
 
-### 2) createElement vs innerHTML
-#### 내용
-- API로 받아오는 데이터에따라 동적으로 HTML을 추가해야하는 상황에서 어디까지 createElement를 사용하고 어디까지 innerHTML을 사용 할 것인가에 대한 고민이 있었습니다.
-- createElement를 사용하는 것이 브라우저 효율쪽이나 여러모로 innerHTML보다 권장되는 방식이지만, 게시글 하나에 들어가는 태그들의 수가 늘어나며 이 모든 것을 createElement로 작성하는 것에 대한 고민이 생겼습니다.
-- 또 innerHTML로 생성한 노드는 querySeletor로 선택하지 못하는 문제도 확인하였습니다.
-#### 결론
-- 예시로 게시글의 경우 하트 버튼에 이벤트 리스너가 추가되어야하는 상황이라 이벤트를 추가해야하는 노드의 경우는 createElement를 사용하여 생성하였습니다.
-- 고정된 HTML구조의 경우는 innerHTML로, 데이터에 따라 값이 바뀌는 경우는 createElement로 생성하는 쪽으로 결정하였습니다.
-
-### 3) button vs a
-#### 내용
-- 생긴 모양은 button 태그같지만 페이지 이동인지 동작의 수행인지에 따라 a 태그로 사용해야하는 것에 대한 논의를 하였습니다.
-#### 결론
-- 각 태그의 의미를 고려하여 페이지 이동의 경우에는 a 태그로, 클래스나 데이터가 변경되는 경우에는 button 태그로 사용하기로 결정하였습니다.
-
-### 4) URLSearchParams
-- 게시물마다 지정된 post id를 url에 넘겨줘야 되는 상황이 있었습니다. 해당 데이터를 로컬스토리지에 저장해서 쓰는 거보다 쿼리 스트링으로 쓰는 것이 메모리 효율이나 직관성이 높다는 의견이 나왔습니다. 그래서 URLSearchParams.get 메서드를 사용하기로 했습니다.
-
-
-<p align="right"><a href="#top">(Top)</a></p>

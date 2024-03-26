@@ -12,21 +12,17 @@
 - 🙋🏻‍♀️ 이상호 🔗[github/mutual99](https://github.com/mutual99)
 - 🙋🏼‍♀️ 윤민영 🔗[github/as8285](https://github.com/as8285)
 
+
 ## <span id="goal">1. 프로젝트 목표</span>
-- 개인 판매자가 보다 손쉽게 자신의 상품(딸기)을 판매하는 플랫폼을 제공합니다.
-- 현재 판매를 진행하지 않는 잠재 판매자와 고객에게 쉽게 접근 가능한 SNS 플랫폼을 제공합니다.
-- 손수 제작한 상품을 등록하여 수익 창출이 가능한 SNS 장터입니다.
+- 여행지를 찾는 유저들에게 여행지 정보와 커뮤니티를 동시에 즐길 수 있는 플랫폼을 제공합니다.
+- 추천 여행지를 제공하므로써, 여행 목적지의 선택을 편리하게 합니다.
 
 <p align="right"><a href="#top">(Top)</a></p>
 
 ## <span id="dev">2. 개발 환경 및 배포 URL</span>
 ### 개발 환경
-- Front : HTML, CSS, Vanilla JS
-- Back : 제공된 API 사용
-- 버전 관리 및 이슈 : 🔗[GitHub](https://github.com/nurimeansworld/strawberry_market), 🔗[GitHub Issues](https://github.com/nurimeansworld/strawberry_market/issues), 🔗[GitHub Project](https://github.com/nurimeansworld/strawberry_market/projects/1)
-- 서비스 배포 환경 : [🔗 Vercel](https://vercel.com/)
-### 배포 URL
-URL : 🔗 https://strawberry-market.vercel.app/
+- Front : HTML5, CSS3, JavaScript, jQuery, Ajax
+- Back : Java, MySQL, MyBatis, JSP, Spring
 
 <p align="right"><a href="#top">(Top)</a></p>
 

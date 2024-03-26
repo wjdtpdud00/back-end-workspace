@@ -8,9 +8,9 @@
 - 📝 게시글을 구경하다가 마음에 드는 게시물을 발견했다면 댓글을 남길 수 있습니다.
 ## 팀원 구성
 - 🙋🏻‍♀️ 정회영 🔗[github/JeongHoeYeong](https://github.com/JeongHoeYeong)
-- 🙋🏼‍♀️ 정세영 🔗[github/wjdtpdud00]([https://github.com/zeroyouth](https://github.com/wjdtpdud00))
-- 🙋🏻‍♀️ 이상호 🔗[github/mutual99]([https://github.com/zeroto99](https://github.com/mutual99))
-- 🙋🏼‍♀️ 윤민영 🔗[github/as8285](h[ttps://github.com/greenknight03](https://github.com/as8285))
+- 🙋🏼‍♀️ 정세영 🔗[github/wjdtpdud00](https://github.com/wjdtpdud00)
+- 🙋🏻‍♀️ 이상호 🔗[github/mutual99](https://github.com/mutual99)
+- 🙋🏼‍♀️ 윤민영 🔗[github/as8285](https://github.com/as8285)
 
 <details>
 <summary>목차</summary>

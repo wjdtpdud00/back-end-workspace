@@ -96,19 +96,19 @@
 - 하단 이미지와 같이 개인, 공동 작업 페이지로 나누어 진행하였습니다.
 <img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/733f13c9-fb4e-49b9-8254-5fcfae48766b">
 
-
+### 금쪽같은 코딩팀 '전만순 프로젝트'
+- 🔗[github/JeongHoeYeong](https://github.com/JeongHoeYeong/gold-semi)
 ### 🙋🏻‍♀️ 정회영 
-  - 🔗[github/nurimeansworld](https://github.com/nurimeansworld)
-  - 프로필 페이지, 팔로잉 페이지, 상품 등록 페이지, 상품 수정 페이지
-### 🙋🏼‍♀️ 최영은
-  - 🔗[github/zeroyouth](https://github.com/zeroyouth)
-  - 홈 피드 페이지, 채팅 페이지
-### 🙋🏻‍♀️ 이지아
-  - 🔗[github/zeroto99](https://github.com/zeroto99)
-  - 게시글 작성 페이지, 게시글 상세 페이지, 검색 페이지
-### 🙋🏽‍♀️ 한희정
-  - 🔗[github/greenknight03](https://github.com/greenknight03)
-  - 모달 페이지, 하단 탭 메뉴 페이지
+  - 게시판 작성 페이지, 게시판 수정/삭제 페이지, 게시판 대댓글 페이지, 추천수&조회수, Search 기능
+### 🙋🏼‍♀️ 정세영
+  - 관광지&맛집 데이터 파싱, 이미지 및 데이터 리스트 웹문서에 뿌리기, 이미지 클릭시 상세 페이지,
+    Paging 기능(편의기능 : 인덱스 넘어갈곳 없을시 화살표 모양 변경), Search 기능
+### 🙋🏻‍♀️ 이상호
+  - 로그인 페이지, 마이페이지(나의정보, 회원정보 변경, 회원 탈퇴), 회원가입 페이지,
+    메인 페이지 검색 기능
+### 🙋🏼‍♀️ 윤민영
+  - 메인 페이지 (Best5 디테일 페이지, 순간 클리시 페이지 디자인),
+    디자인(Logo, Font style, Team Caricature, Animation), 지도&이미지 업로드
 
 <p align="right"><a href="#top">(Top)</a></p>
 

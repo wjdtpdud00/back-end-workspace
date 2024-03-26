@@ -162,6 +162,8 @@
 ## <span id="ui">6. UI</span>
 <img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/3365d983-1c37-4049-9bd3-a5702e8ef9c3">
 
+<img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/4f7908f2-4e22-4cb7-a185-178580bee75d">
+
 <p align="right"><a href="#top">(Top)</a></p>
 
 ## <span id="pages">7. 페이지 기능</span>

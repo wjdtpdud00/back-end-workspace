@@ -1,15 +1,16 @@
-# <span id="top">🍓 딸기마켓</span>
+# <span id="top"> ✈️ 전만순 </span>
 [🔗 배포 URL](https://strawberry-market.vercel.app/)
 ## 개요
-- 🦁 멋쟁이사자처럼 프론트엔드스쿨 1기 팀 프로젝트로 진행한 딸기마켓입니다.
-- 🍓 딸기마켓 서비스는 자신의 스토어에서 판매하고 있는 상품(딸기)을 등록하여 홍보할 수 있는 SNS입니다.
-- 🙌 상품을 등록하지 않아도 일상을 공유하며 즐거운 SNS 활동을 할 수 있습니다. 글과 사진과 함께 게시물을 작성하여 자신의 일상을 공유할 수 있습니다. 다른 사용자를 팔로우하면 유저가 올린 게시물을 홈 피드에서 소식을 확인할 수도 있습니다.
-- 📝 피드를 구경하다가 마음에 드는 게시물을 발견했다면 댓글을 남길 수 있습니다.
+- 😁 금쪽같은 코딩팀이 진행한 프로젝트 '전만순'입니다.
+- ✈️ '전만순' 서비스는 '전만순' 서비스는 여행지를 찾는 유저들에게 국내여행지의 정보를 제공하는 사이트입니다.
+- 🙌 일상을 공유하며 여행 동행자를 찾는 커뮤니티 활동을 할 수 있습니다.
+- 또한 글과 사진과 함께 게시물을 작성하여 자신의 일상을 공유할 수 있습니다.
+- 📝 게시글을 구경하다가 마음에 드는 게시물을 발견했다면 댓글을 남길 수 있습니다.
 ## 팀원 구성
-- 🙋‍♀️ 박누리 🔗[github/nurimeansworld](https://github.com/nurimeansworld)
-- 🙋🏼‍♀️ 최영은 🔗[github/zeroyouth](https://github.com/zeroyouth)
-- 🙋🏻‍♀️ 이지아 🔗[github/zeroto99](https://github.com/zeroto99)
-- 🙋🏽‍♀️ 한희정 🔗[github/greenknight03](https://github.com/greenknight03)
+- 🙋🏻‍♀️ 정회영 🔗[github/JeongHoeYeong]([https://github.com/nurimeansworld](https://github.com/JeongHoeYeong))
+- 🙋🏼‍♀️ 정세영 🔗[github/zeroyouth](https://github.com/zeroyouth)
+- 🙋🏻‍♀️ 이상호 🔗[github/zeroto99](https://github.com/zeroto99)
+- 🙋🏼‍♀️ 윤민영 🔗[github/greenknight03](https://github.com/greenknight03)
 
 <details>
 <summary>목차</summary>

@@ -32,61 +32,90 @@
 - pages/ : 서비스용 html 디렉토리
 - js/ : pages의 html과 매칭되는 JS 디렉토리. script.js는 pages 공통으로 사용되는 함수가 등록된 파일
 
-```bash
-│  README.md
-│  index.html
-├── assets
-├── css
-│    ├── default.css
-│    ├── font.css
-│    ├── reset.css
-│    ├── style.css
-│    ├── style_HJ.css
-│    ├── style_JA.css
-│    ├── style_NR.css
-│    └── style_YE.css
-├── font
-├── html
-├── js
-│    ├── accountedit.js
-│    ├── chat.js
-│    ├── chatroom.js
-│    ├── edit.js
-│    ├── followers.js
-│    ├── followfeed.js
-│    ├── followings.js
-│    ├── index.js
-│    ├── intro.js
-│    ├── join.js
-│    ├── login.js
-│    ├── mypostedit.js
-│    ├── myprofile.js
-│    ├── post.js
-│    ├── postdetail.js
-│    ├── product.js
-│    ├── profile.js
-│    ├── script.js
-│    ├── search.js
-│    └── useredit.js
-└── pages
-     ├── accountedit.html
-     ├── chat.html
-     ├── chatroom.html
-     ├── edit.html
-     ├── followers.html
-     ├── followfeed.html
-     ├── followings.html
-     ├── home.html
-     ├── intro.html
-     ├── join.html
-     ├── login.html
-     ├── mypostedit.html
-     ├── myprofile.html
-     ├── post.html
-     ├── postdetail.html
-     ├── product.html
-     ├── profile.html
-     └── search.html
+│README.md
+│
+├  jsp
+│   ├ index
+│   ├ restaurantList
+│   ├ tourlist
+│   ├ admin
+│   ├ findId
+│   ├ findpwd
+│   ├ findpwd2 
+│   ├ footer
+│   ├ header
+│   ├ login
+│   ├ member
+│   ├ register
+│   ├ update
+│   ├ userout
+│   ├ calendar
+│   ├ boardedit
+│   ├ boardlist
+│   ├ boardsearch
+│   ├ boardview
+│   ├ boardwrite
+│   ├ mywriteboard
+│
+├  HTML
+│   ├ about
+│   ├ contact
+│   ├ pricing
+│   ├ work
+│   ├ work-single
+│
+├  css
+│   ├ boardlist
+│   ├ boardview
+│   ├ boardwrite
+│   ├ myWriteBoard
+│   ├ admin
+│   ├ bootstrap
+│   ├ bootstrap.min
+│   ├ boxicon.min
+│   ├ calender
+│   ├ custom
+│   ├ findId
+│   ├ findpwd
+│   ├ findpwd
+│   ├ index
+│   ├ loading
+│   ├ loginpage
+│   ├ main
+│   ├ mainmin
+│   ├ mainpage
+│   ├ maintemplatemo
+│   ├ register
+│   ├ reset
+│   ├ review
+│   ├ templatemo
+│   ├ tourplace
+│
+├  js
+│   ├ boardlist
+│   ├ boardview
+│   ├ boardwrite
+│   ├ myWriteBoard
+│   ├ bootstrap.bundle.min
+│   ├ calender
+│   ├ custom
+│   ├ findId
+│   ├ findResult
+│   ├ findpwd
+│   ├ findpwd2
+│   ├ fslightbox
+│   ├ isotope.pkgd
+│   ├ jquery.min
+│   ├ loading
+│   ├ loginpage
+│   ├ mainselect
+│   ├ register
+│   ├ templatemo
+│   ├ templatemo.min
+│   ├ tourselect
+│
+├  image
+├  font 
 ```
 
 <p align="right"><a href="#top">(Top)</a></p>

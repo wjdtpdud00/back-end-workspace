@@ -167,7 +167,7 @@
 |<img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/4f7908f2-4e22-4cb7-a185-178580bee75d">|
 |마이페이지 & 게시판 페이지|
 |<img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/8945365e-f929-4c79-a7c4-a824504db98e">|
-|관광지·맛집 게시판 상세페이지 & 관광지·맛집 게시판|
+|관광지 · 맛집 게시판 상세페이지 & 관광지 · 맛집 게시판|
 
 
 

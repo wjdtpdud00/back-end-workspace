@@ -146,7 +146,7 @@
 ## <span id="task">5. 개발 기간 및 작업 관리</span>
 - 전체 개발 기간 : 2024-02-16 ~ 2024-03-26
   
-### 주간회의
+### - 주간회의
 주간회의를 진행하여 작업 방향이나 코드 고민에 대해 나누었고 GitHub Wiki를 사용하여 기록하였습니다.
 
 - 🔗[220202 회의록](https://github.com/nurimeansworld/strawberry_market/wiki/220202-회의록)

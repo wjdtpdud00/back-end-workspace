@@ -160,7 +160,7 @@
 <p align="right"><a href="#top">(Top)</a></p>
 
 ## <span id="ui">6. UI</span>
-<img src="https://user-images.githubusercontent.com/89337955/153887850-b1199e73-15a8-474a-a7b9-e11155ad7168.jpg">
+<img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/3365d983-1c37-4049-9bd3-a5702e8ef9c3">
 
 <p align="right"><a href="#top">(Top)</a></p>
 

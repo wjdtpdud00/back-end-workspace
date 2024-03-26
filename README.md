@@ -32,6 +32,7 @@
 - pages/ : 서비스용 html 디렉토리
 - js/ : pages의 html과 매칭되는 JS 디렉토리. script.js는 pages 공통으로 사용되는 함수가 등록된 파일
 
+```bash
 │README.md
 │
 ├  jsp

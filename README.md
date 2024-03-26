@@ -3,11 +3,11 @@
 ## 개요
 - 😁 금쪽같은 코딩팀이 진행한 프로젝트 '전만순'입니다.
 - ✈️ '전만순' 서비스는 여행지를 찾는 유저들에게 국내여행지의 정보를 제공하는 사이트입니다.
-- 🙌 일상을 공유하며 여행 동행자를 찾는 커뮤니티 활동을 할 수 있습니다.
-- 또한 글과 사진과 함께 게시물을 작성하여 자신의 일상을 공유할 수 있습니다.
-- 📝 게시글을 구경하다가 마음에 드는 게시물을 발견했다면 댓글을 남길 수 있습니다.
+- 🙌 일상을 공유하고 여행 동행자를 찾는 등의 커뮤니티 활동을 할 수 있습니다.또한 글, 사진과 함께 게시물을 작성하여 자신의 일상을 공유할 수 있습니다.
+- 📝 마음에 드는 게시물을 발견했다면 찜해 놓거나 댓글을 남길 수 있습니다.
+  
 ## 팀원 구성
-- 🙋🏻‍♀️ 정회영 🔗[github/JeongHoeYeong](https://github.com/JeongHoeYeong/gold-semi)
+- 🙋🏻‍♀️ 정회영(팀장) 🔗[github/JeongHoeYeong](https://github.com/JeongHoeYeong/gold-semi)
 - 🙋🏼‍♀️ 정세영 🔗[github/wjdtpdud00](https://github.com/wjdtpdud00)
 - 🙋🏻‍♀️ 이상호 🔗[github/mutual99](https://github.com/mutual99)
 - 🙋🏼‍♀️ 윤민영 🔗[github/as8285](https://github.com/as8285)
@@ -15,7 +15,7 @@
 
 ## <span id="goal">1. 프로젝트 목표</span>
 - 여행지를 찾는 유저들에게 여행지 정보와 커뮤니티를 동시에 즐길 수 있는 플랫폼을 제공합니다.
-- 추천 여행지를 제공하므로써, 여행 목적지의 선택을 편리하게 합니다.
+- 추천 여행지를 제공하므로써, 여행 목적지의 선택을 도와줍니다.
 
 <p align="right"><a href="#top">(Top)</a></p>
 
@@ -27,10 +27,6 @@
 <p align="right"><a href="#top">(Top)</a></p>
 
 ## <span id="tree">3. 프로젝트 구조</span>
-- assets/ : 이미지, 파비콘, 아이콘 등
-- html/ : 개발용 html 디렉토리
-- pages/ : 서비스용 html 디렉토리
-- js/ : pages의 html과 매칭되는 JS 디렉토리. script.js는 pages 공통으로 사용되는 함수가 등록된 파일
 
 ```bash
 │README.md
@@ -123,23 +119,27 @@
 
 
 ## <span id="role">4. 역할 분담</span>
-- 하단 이미지와 같이 개인, 공동 작업 페이지로 나누어 진행하였습니다.
+- 하단 이미지와 같이 역할을 나누어 진행하였습니다.
 <img src="https://github.com/wjdtpdud00/back-end-workspace/assets/152463268/733f13c9-fb4e-49b9-8254-5fcfae48766b">
 
-### 금쪽같은 코딩팀 '전만순 프로젝트' URL
+
+### 😁금쪽같은 코딩팀 '전만순 프로젝트' URL
 - 🔗[github/JeongHoeYeong](https://github.com/JeongHoeYeong/gold-semi)
 ### 🙋🏻‍♀️ 정회영 
   - 게시판 작성 페이지, 게시판 수정/삭제 페이지, 게시판 대댓글 페이지, 추천수&조회수, Search 기능
+  - 팀원관리, 깃허브 저장소 관리, READEME.md 
 ### 🙋🏼‍♀️ 정세영
   - 관광지&맛집 데이터 파싱, 이미지 및 데이터 리스트 웹문서에 뿌리기, 이미지 클릭시 상세 페이지,
     Paging 기능(편의기능 : 인덱스 넘어갈곳 없을시 화살표 모양 변경), Search 기능
+  - READEME.md 총괄
 ### 🙋🏻‍♀️ 이상호
   - 로그인 페이지, 마이페이지(나의정보, 회원정보 변경, 회원 탈퇴), 회원가입 페이지,
     메인 페이지 검색 기능
+  - READEME.md 
 ### 🙋🏼‍♀️ 윤민영
   - 메인 페이지 (Best5 디테일 페이지, 순간 클리시 페이지 디자인),
     디자인(Logo, Font style, Team Caricature, Animation), 지도&이미지 업로드
-
+  - 로고제작, 애니메이션 캐릭터 제작, 인스타 생성
 <p align="right"><a href="#top">(Top)</a></p>
 
 

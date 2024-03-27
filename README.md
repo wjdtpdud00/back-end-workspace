@@ -21,7 +21,7 @@
 <p align="right"><a href="#top">(Top)</a></p>
 
 ## <span id="dev">2. 개발 환경 및 배포 URL</span>
-### 개발 환경
+###  개발 환경
 - Front : HTML5, CSS3, JavaScript, jQuery, Ajax
 - Back : Java, MySQL, MyBatis, JSP, Spring
 
